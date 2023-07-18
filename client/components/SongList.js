@@ -27,7 +27,7 @@ const SongList = () => {
       {!loading 
         ? (<>
             <ul className='collection'>
-            {data.songs.map(({id, title}) => (
+            {data?.songs?.map(({id, title}) => (
                 <li key={id} className='collection-item'>
                   <Link to={`/song/${id}`}>
                     {title}
