@@ -21,6 +21,7 @@ const LyricCreate = ({songId}) => {
       <form onSubmit={handleSubmit}>
         <label>Add a Lyric</label>
         <input value={content} onChange={(e) => setContent(e.target.value)} />
+        <button className='btn' type='submit' >Add Lyrics</button>
       </form>
     </div>
   );

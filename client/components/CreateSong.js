@@ -20,12 +20,13 @@ const CreateSong = () => {
     <div>
       <Link to='/'>Back</Link>
       <h3>Create a new Song</h3>
-      <form onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}>
         <label>Song Title:</label>
         <input
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
+        <button className='btn' type='submit' >Create</button>
       </form>
     </div>
   );
