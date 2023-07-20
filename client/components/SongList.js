@@ -16,7 +16,7 @@ const SongList = () => {
     }
   });
 
-  const onDeletSong = (id) => {
+  const onDeleteSong = (id) => {
   deleteSong({
       variables: {id}
     })
@@ -32,7 +32,7 @@ const SongList = () => {
                   <Link to={`/song/${id}`}>
                     {title}
                   </Link>
-                  <i className='material-icons' onClick={() => onDeletSong(id)}>
+                  <i className='material-icons' onClick={() => onDeleteSong(id)}>
                     delete
                   </i>
                 </li>))
